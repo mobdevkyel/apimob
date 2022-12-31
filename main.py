@@ -1,4 +1,3 @@
-import pandas as pd
 from flask import Flask, jsonify
 
 app = Flask(__name__)
