@@ -53,12 +53,14 @@ def galgoshillside():
     tricast_penultima = penultima['tricast']
 
 
-    print('Vamos verificar se ',vencedor_ultima, ' estar na tricast ', tricast_penultima)
+    #print('Vamos verificar se ',vencedor_ultima, ' estar na tricast ', tricast_penultima)
     if vencedor_ultima in tricast_penultima:
         entrada = numeros(tricast_ultima)
+        separador = ', '
+        minha_string = separador.join(entrada)
         #print('sim, ', vencedor_ultima, 'esta em', tricast_penultima, ', vamos entrar oposto ', entrada, 'as', proxima_hora)
     else:
-        entrada = tricast_ultima
+        minha_string = tricast_ultima.replace("-", ",")
         #print('não, ', vencedor_ultima, 'não esta em', tricast_penultima, ', vamos entrar igual ', entrada, 'as', proxima_hora)
 
     retorno = {
