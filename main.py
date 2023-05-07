@@ -28,6 +28,8 @@ def galgoshillside():
 
         # ordenar a nova lista em ordem crescente
         numeros_faltantes.sort()
+        
+                    
 
         return numeros_faltantes
 
@@ -64,11 +66,13 @@ def galgoshillside():
         #print('não, ', vencedor_ultima, 'não esta em', tricast_penultima, ', vamos entrar igual ', entrada, 'as', proxima_hora)
 
     retorno = {
-        "entrada"   : str(entrada),
+        "entrada"   : minha_string,
         "proxima_hora"    : proxima_hora
     }
 
     return jsonify(retorno)
+
+
 
 
 
