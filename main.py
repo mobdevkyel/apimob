@@ -62,7 +62,7 @@ def galgoshillside():
         #print('não, ', vencedor_ultima, 'não esta em', tricast_penultima, ', vamos entrar igual ', entrada, 'as', proxima_hora)
 
     retorno = {
-        "entrada"   : entrada,
+        "entrada"   : str(entrada),
         "proxima_hora"    : proxima_hora
     }
 
